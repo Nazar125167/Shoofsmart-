@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>تسجيل شركة - Shoof</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { margin:0; padding:32px; background:#b30000; color:#fff; font-family:Tahoma, Arial, sans-serif; }
+    .container { max-width:720px; margin:0 auto; background:#8b0000; border-radius:16px; padding:28px; box-shadow:0 10px 24px rgba(0,0,0,0.35); }
+    h1 { margin:0 0 14px 0; text-align:center; font-size:26px; }
+    .desc { text-align:center; opacity:.9; margin-bottom:18px; }
+    .field { margin:10px 0; }
+    label { display:block; margin-bottom:6px; font-weight:bold; }
+    input, select, textarea {
+      width:100%; padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.18);
+      background:#a30000; color:#fff; outline:none;
+    }
+    textarea { min-height:100px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; }
+    .row .field { flex:1; min-width:220px; }
+    .btn { width:100%; margin-top:16px; background:#ff3333; color:#fff; border:none; border-radius:10px; padding:14px; font-weight:bold; cursor:pointer; }
+    .btn:hover { background:#ff1a1a; }
+    .note { text-align:center; margin-top:12px; opacity:.8; font-size:14px; }
+    .back { display:block; text-align:center; margin-top:18px; color:#fff; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>تسجيل شركة في Shoof</h1>
+    <div class="desc">املأ البيانات التالية لطلب تجربة وكيل شوف الذكي ومؤشر الثقة</div>
+
+    <form onsubmit="event.preventDefault(); alert('تم استلام طلبك بنجاح. سنتواصل معك خلال 24 ساعة.');">
+      <div class="row">
+        <div class="field">
+          <label>اسم الشركة</label>
+          <input type="text" placeholder="مثال: شركة الصيانة المتحدة" required />
+        </div>
+        <div class="field">
+          <label>نوع الخدمة</label>
+          <select required>
+            <option value="">اختر النوع</option>
+            <option>صيانة</option>
+            <option>تنظيف</option>
+            <option>توصيل</option>
+            <option>ضيافة</option>
+            <option>عقارات</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>رقم التواصل (واتساب)</label>
+          <input type="tel" placeholder="مثال: 974XXXXXXXX" required />
+        </div>
+        <div class="field">
+          <label>البريد الإلكتروني</label>
+          <input type="email" placeholder="example@company.com" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>رابط فيديو توثيقي (اختياري)</label>
+        <input type="url" placeholder="ضع رابط الفيديو إن وجد" />
+      </div>
+
+      <div class="field">
+        <label>وصف مختصر للخدمة</label>
+        <textarea placeholder="صف باختصار مستوى الجودة، سرعة الاستجابة، والأسعار"></textarea>
+      </div>
+
+      <button class="btn" type="submit">إرسال طلب التجربة</button>
+    </form>
+
+    <a class="back" href="index.html">العودة إلى الصفحة الرئيسية</a>
+    <div class="note">هذه نسخة Demo—الغرض منها إثبات القيمة وتجربة المنتج مع أول 10 شركات</div>
+  </div>
+</body>
+</html>
